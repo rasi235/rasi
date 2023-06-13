@@ -48,7 +48,7 @@ def model():
 
     ccg =''
 
-    if st.button('heart test resullt'):
+    if st.button('Heart Test Resullt'):
         ccg = heart_prediction([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
     st.success(ccg)
 
