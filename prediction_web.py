@@ -29,7 +29,7 @@ def  heart_prediction(input_data):
 def model():
 
 
-    st.title("Heart prediction web app")
+    st.title("Heart Prediction Web App")
     #  age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal
     age=st.text_input("Age of the person")
     sex=st.text_input("Male or Female")
