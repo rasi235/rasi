@@ -18,9 +18,9 @@ def  heart_prediction(input_data):
     print(prediction)
 
     if (prediction[0]== 0):
-       return(" Person is Defective")
+       return("The  Person Does not have a Heart Disease")
     else:
-       return("Person is healthy")
+       return("The person has  Heart Disease")
 
 # heart_prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal)
 # st.display(input_data)
