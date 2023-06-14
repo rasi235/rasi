@@ -11,9 +11,8 @@ input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
 prediction = loaded_model.predict(input_data_reshaped)
 print(prediction)
 
-if (prediction[0] ==0):
-  print("Person is Defective")
+if (prediction[0]== 0):
+  print("The  Person Does not have a Heart Disease")
 else:
-  print("Person is healthy")
+  print("The person has  Heart Disease")
 
-# st.display(prediction)
