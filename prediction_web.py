@@ -37,13 +37,13 @@ def model():
     trestbps=st.text_input("TRESTPS(Resting Blood Pressure)")
     chol=st.text_input("CHOL(Serum Cholesterol)")
     fbs=st.text_input("FBS(Fasting Blood Sugar)")
-    restecg=st.text_input("RESTECG(Resting Electrocardiographic Measurement)")
+    restecg=st.text_input("RESTECG(Resting Electrocardiographic Measurement(0,1,2)")
     thalach=st.text_input("THALACH(The Person's Maximum Heart Rate Achieved)")
     exang=st.text_input("EXANG(Exercise Induced Angina)")
     oldpeak=st.text_input("OLDPEAK(ST Depression Induced By Exercise Relative To Rest)")
     slope=st.text_input("SLOPE(The ST Segment Shift Relative To Exercise-Induced Increments In Heart Rate)")
-    ca= st.text_input("CA(The Number of Major Vessels)")
-    thal=st.text_input("THAL(The persons maximum heart rate achieved)")
+    ca= st.text_input("CA(The Number of Major Vessels(0-3)")
+    thal=st.text_input("THAL(The persons maximum heart rate achieved(normal=3,fixed defect=6,reversable defect=7)")
 
 
     heartdisease=''
