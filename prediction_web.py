@@ -46,11 +46,11 @@ def model():
     thal=st.text_input("THAL(The persons maximum heart rate achieved)")
 
 
-    ccg =''
+    heartdisease=''
 
     if st.button('Heart Test Resullt'):
         ccg = heart_prediction([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
-    st.success(ccg)
+    st.success(heartdisease)
 
 if __name__ == '__main__':
     model()
