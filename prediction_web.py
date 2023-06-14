@@ -49,7 +49,7 @@ def model():
     heartdisease=''
 
     if st.button('Heart Test Resullt'):
-        ccg = heart_prediction([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
+        heartdisease  = heart_prediction([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
     st.success(heartdisease)
 
 if __name__ == '__main__':
