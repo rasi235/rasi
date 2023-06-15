@@ -22,7 +22,7 @@ def  heart_prediction(input_data):
     else:
        return("The person has  Heart Disease")
 
-# heart_prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal)
+# heart_prediction(age,gender,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal)
 # st.display(input_data)
 
 
@@ -32,7 +32,7 @@ def model():
     st.title("Heart  Disease Prediction Web App")
     #  age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal
     age=st.text_input("Age of the person")
-    sex=st.text_input("Male or Female(M=1,F=0)")
+    gender=st.text_input("Male or Female(M=1,F=0)")
     cp=st.text_input("CP(Chest Pain)")
     trestbps=st.text_input("TRESTPS(Resting Blood Pressure)")
     chol=st.text_input("CHOL(Serum Cholesterol)")
@@ -49,7 +49,7 @@ def model():
     heartdisease=''
 
     if st.button('Heart Test Resullt'):
-        heartdisease  = heart_prediction([age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
+        heartdisease  = heart_prediction([age,gender,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal])
     st.success(heartdisease)
 
 if __name__ == '__main__':
